@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    html,body{width:100%;height:100%;}
+    html{background-color : #000;}
+    .container {
+        background-image:url('https://o.aolcdn.com/images/dims?quality=80&thumbnail=1200%2C630&image_uri=https%3A%2F%2Fs-i.huffpost.com%2Fgen%2F5576582%2Fimages%2Fo-LION-KING-DISNEY-facebook.jpg&client=cbc79c14efcebee57402&signature=1224473284b651fb30f17ca9a9820cf02e877b66');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        
+    }
+    h1{ color:white;
+    font-family: 'Pacifico', cursive;
+    font-size:  70px !important;  
+    text-align:center;     
+    }
+    .btn {
+    color: #fff!important;
+    background-color: brown!important;
+    border-color: brown !important;
+    margin:auto;}
+    .btn:hover {
+    color: #fff!important;
+    background-color: brown!important;
+    border-color: brown !important;
+    transform: scale(1.2);
+    
+    }
+    .btns{display:flex;}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body class='container'>
+    <h1>wordcount</h1>
+    <!-- 페이지 설명(about링크)
+    글씨를 받을 수 있는 form태그
+    숫자를세주는count로 갈수있는 링크/%endcomment% -->
+    
+    <a href="{% url 'about'%}">about</a>
+    
+    <form action="{% url 'count'%}" class='form-group'> 
+    <textarea class='form-control' cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <div class="btns">
+            <input type="submit" class='btn btn-lg ' value="COUNT!">
+    
+
+    </div>
+    </form>    
+</body>
+</html>
