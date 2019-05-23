@@ -1,14 +1,22 @@
-<div class='wrapper'>
+
+                <div class="title_box">
 <h1>count</h1>
+                </div>
+                <div class='wrapper'>
+                    <div class="nav">
 
-<h1>입력한 텍스트:</h1>
-{{fulltext}}
+<br><br>
+<div class="title_box2">
+<h1>입력한 텍스트:</h1><br><br>
+{{fulltext}}<br><br>
 
-<h1>단어 카운트:</h1>
+<h1>단어 카운트:</h1><br>
 {% for word, countTotal in dictionary %}
     {{word}}-{{countTotal}}
 <br>
 {% endfor %}
+</div>
+</div>
 </div>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +27,30 @@
          .wrapper{
              color: white;
              text-align: center;
+             
          }
      body{background-color: black;}
-     h1 {color: white;}
+     h1 {color: white;
+         padding: 55px;
+        }
+        .title_box {
+    
+    margin: 60px;
+    padding: 70px;
+    background: #7955488c;
+}
+.title_box{
+    background:url('https://o.aolcdn.com/images/dims?quality=80&thumbnail=1200%2C630&image_uri=https%3A%2F%2Fs-i.huffpost.com%2Fgen%2F5576582%2Fimages%2Fo-LION-KING-DISNEY-facebook.jpg&client=cbc79c14efcebee57402&signature=1224473284b651fb30f17ca9a9820cf02e877b66');
+    height: 310px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -68px;
+}
+.title_box2{
+    margin: 0px auto;
+    padding: 70px;
+    background: #7955488c;
+}
 
      </style>   
      
